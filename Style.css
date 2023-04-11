@@ -1,0 +1,304 @@
+/* This is a CSS comment */
+* {
+	padding:0;
+	margin:0;
+}
+body {
+	font-family: Arial, Verdana, sans-serif;
+	font-style: normal;
+	font-size: 100%;
+
+	background-color: #d8e2dc;
+}
+
+.welcome{
+
+	text-align: center;
+    min-height: auto;
+    align-items: center;
+    justify-content: center; 
+}
+
+.welcome2{
+	position:absolute;
+	top:150px;
+	left:100px;
+}
+
+/* top navigation */
+.topnav{
+		height:0;
+		width:100%;
+		position: fixed;
+		z-index:3;
+		top: -20px;
+		left: 0;
+		background-color: white;
+		overflow-x: hidden;
+		transition: 0.2s;
+		padding-top: 20px; 
+		padding-left: 50px;
+		padding-bottom: 0px;
+		opacity: 80%;
+}
+
+.topnav a{
+	padding-top:25px;
+	text-decoration: none;
+	font-size: 25px;
+	color: black;
+	display: inline-block;
+	position: relative;
+	transition: 0.3;
+}
+
+/* close top nav */
+.topnav.closebtn{
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+/* footer */
+.botfoot{
+	height:0;
+	width:100%;
+	position: fixed;
+	z-index:3;
+	top: 100%;
+	left: 0;
+	background-color: white;
+	overflow-x: hidden;
+	transition: 0.2s;
+	padding-top: 20px; 
+	padding-left: 50px;
+	padding-bottom: 10px;
+	opacity: 80%;
+}
+
+.botfoot a{
+text-decoration: none;
+font-size: 50px;
+color: black;
+display: inline-block;
+position: relative;
+transition: 0.3;
+
+}
+
+/* close footer */
+.botfoot.close{
+	position: absolute;
+	top: 0;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+.logo{
+	height: 30%;
+	width: 10%;
+	padding-left: 85%;
+	margin-top: -10%;
+}
+
+/*button animation*/
+.gotonews{
+	position: absolute;
+	left: 44%;
+	top: 77%;
+	color:#fff;
+	border-radius:3px;
+	background:#1F8DD6;
+	padding:5px;
+	margin-top:40px;
+	border:none;
+	width:150px;
+	height:30px;
+	box-shadow:0 0 1px 2px #123456;
+	font-size:16px
+}
+	
+.gotonews:hover{
+	cursor: pointer;
+	text-shadow:2px 2px 2px #cfcfcf;
+	font-size:18px
+}
+	
+	/* Slideshow container */
+.slideshow-container
+{
+	max-width: 720px;
+	position: relative;
+	margin: auto;
+	margin-top: 7%;
+}
+	
+/* Next & previous buttons */
+.prev, .next
+{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+	
+/* Position the "next button" to the right */
+.next
+{
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+	
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover
+{
+	background-color: rgba(0,0,0,0.8);
+}
+	
+/* Caption text */
+.text
+{
+	color: #000000;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 110%;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+	
+/* Number text (1/3 etc) */
+.numbertext
+{
+	color: black;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+	
+/* The dots/bullets/indicators */
+.dot 
+{
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+	
+.active, .dot:hover
+{
+	background-color: #717171;
+}
+	
+/* Fading animation */
+.fade
+{
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+	
+@keyframes fade 
+{
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+	
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) 
+{
+	.prev, .next,.text {font-size: 11px}
+}
+
+.box{
+    width: 60%;
+    margin: 0 auto;
+    background:rgb(105, 121, 88);
+    text-align: center;
+    min-height: auto;
+    align-items: center;
+    justify-content: center; 
+    font-size: 24px;
+    border-radius: 25px;
+    }
+
+.fakenews{
+	width: 90%;
+	margin: 0 auto;
+	min-height: auto;
+	font-size: 20px;
+	border-radius: 25px;
+}
+	
+
+
+	#content .post {
+		width: 259px; height: 420px;
+		margin: 0 auto;
+		text-align: center;
+		padding: 200px 5% 0 2%;
+		float:left;
+	}
+		#content .post h2 {
+			font-family: Georgia;
+			font-size: 1.5em;
+			margin-bottom: 15px;
+		}
+		#content .post h2 :hover {
+			cursor: pointer;
+			text-decoration: underline;
+		}
+
+			#content .post h2 a {
+				color: #252525;
+			}
+		#content .post .date {
+			font-size: 0.9em;
+			font-family: Georgia;
+			color: #808080;
+			margin-bottom: 15px;
+		}
+		#content .post .continue {
+			color: #ffffff;
+			background-color: #DC1000;
+			padding: 5px 10px;
+			float:center;
+			font-family: Georgia;
+			font-weight: bold;
+			margin-bottom: 25px;
+	
+		}
+		#content .post p {
+			margin-bottom: 10px;
+			line-height: 1.4em;
+		}
+		#content .post .thumb {
+			height: 92px;
+			overflow: hidden;
+			padding: 5px;
+			background-color: #EEEEEE;
+			border: 1px solid #E8E8E8;
+			margin-bottom: 10px;
+		}
+			#content .post .thumb div {
+				height: 92px;
+				overflow: hidden;
+			}
+			#content .post .thumb img {
+				width: 247px;
+			}
